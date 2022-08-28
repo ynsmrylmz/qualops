@@ -1,0 +1,21 @@
+.login {
+    &-container {
+        height:100%;
+    }
+
+    &-sidebar {
+        background:#2E394B;
+        height: 100%;
+    }
+
+    &-form {
+        align-self: center;
+
+        &-container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+    }    
+}
