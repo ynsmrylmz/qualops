@@ -1,0 +1,20 @@
+.ant {
+    &-btn {
+        border-radius: 0.5rem;
+
+        &-primary {
+            background-color: $primary-color-1;
+            border-color: $primary-color-1;
+        }
+    }
+
+    &-input {
+        &-affix-wrapper{
+            border-radius: 0.5rem;
+        }
+
+        &::placeholder {
+            color: $primary-color-1;
+        }
+    }
+}

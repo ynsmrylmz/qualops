@@ -1,6 +1,5 @@
 import { Input as AntInput } from 'antd';
 import classNames from 'classnames';
-import "./index.scss";
 
 function Input(props) {    
     const classnames = classNames({

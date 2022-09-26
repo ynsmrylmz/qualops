@@ -1,0 +1,13 @@
+{
+    "login":{
+        "title": "Welcome Back",
+        "button":"Sign In",
+        "mail":"Mail",
+        "password":"Password",
+        "validationMessages":{
+            "password": "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters",
+            "mail" : "Please enter a email address!"
+        },
+        "remember": "Remember me"
+    }
+}
