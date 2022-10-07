@@ -1,20 +1,141 @@
 .ant {
     &-btn {
-        border-radius: 0.5rem;
+        border-radius: $border-radius;
+        font-weight: 500;
+        width: 100%;
 
         &-primary {
             background-color: $primary-color-1;
             border-color: $primary-color-1;
+
+            &:hover {
+                background-color: $primary-color-2;
+                border-color: $primary-color-2;
+            }            
+
+            &:focus {
+                background-color: $primary-color-1;
+                border-color: $primary-color-1;
+            }
+        }
+
+        &-default {
+            color: $primary-color-1;
+            border-color: $primary-color-1;
+
+            &:hover {
+                color: $primary-color-2;
+                border-color: $primary-color-2;
+                box-shadow: $box-shadow;
+            }
+
+            &:focus {
+                color: $primary-color-1;
+                border-color: $primary-color-1;
+            }
         }
     }
 
     &-input {
+        border-radius: $border-radius;
+
         &-affix-wrapper{
-            border-radius: 0.5rem;
+            border-radius:  $border-radius;
         }
 
         &::placeholder {
             color: $primary-color-1;
+        }
+
+        &:focus,
+        &:hover {
+            border-color: $primary-color-1;
+        }
+
+        &:focus {
+            box-shadow: $box-shadow;
+            border-color: $primary-color-3;
+        }
+    }
+
+    &-select {
+        width: 100%;
+        &-selector {
+            border-radius: $border-radius;
+        }
+
+        &-focused {
+            &:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+                border-color:$primary-color-3;
+                box-shadow: $box-shadow;
+            }
+        }
+
+        &:hover {
+            &:not(.ant-select-disabled) .ant-select-selector {
+                border-color: $primary-color-1;
+            }
+        }
+    }
+
+    &-menu{
+        &-item{
+            .menu-item-icon,
+            .menu-item-label {
+                color: $primary-color-1;
+            }
+            &-selected {
+                background-color: $primary-color-1 !important;
+                .menu-item-icon,
+                .menu-item-label {
+                    color: #fff ;
+                }
+
+                &::after {
+                    content: unset !important;
+                }
+            }
+
+            &:hover {
+                background-color: $primary-color-1 !important;
+                background-color: $primary-color-1 !important;
+                .menu-item-icon,
+                .menu-item-label {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &-layout {
+        height: 100%;
+
+        &-content {
+            user-select: none;
+        }
+    }
+
+    &-col {
+        padding: $padding;
+    }
+
+    &-divider {
+        border-color: rgba(0,0,0,0.2);
+    }
+
+    &-tabs {
+        &-tab {
+            &.ant-tabs-tab-active .ant-tabs-tab-btn{
+                color:$primary-color-1;
+            }
+
+            &:hover {
+                color: $primary-color-1;
+            }
+        }
+
+        &-ink-bar {
+            background-color: $primary-color-1;
         }
     }
 }

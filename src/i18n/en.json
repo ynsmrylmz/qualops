@@ -1,7 +1,7 @@
 {
     "login":{
         "title": "Welcome Back",
-        "button":"Sign In",
+        "button":"Login",
         "mail":"Mail",
         "password":"Password",
         "validationMessages":{
@@ -9,5 +9,21 @@
             "mail" : "Please enter a email address!"
         },
         "remember": "Remember me"
+    },
+    "register":{
+        "button":"Sign In"
+    },
+    "apitest":{
+        "placeholder":{
+            "name":"Test Name",
+            "tag" : "Add Tag",
+            "suite" : "Select Suite",
+            "url" : "https://"
+        },
+        "buttons":{
+            "save": "Save Changes",
+            "run":"Run Test",
+            "add":"Add Header"
+        }
     }
 }

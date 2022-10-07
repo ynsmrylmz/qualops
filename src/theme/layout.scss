@@ -1,0 +1,94 @@
+.menu-item{    
+    &-label {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &-icon {
+        color: #fff;
+        font-size: 36px !important;
+    }
+}
+
+.header {
+    background-color: $primary-color-6; // primary-5 #f0edff
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Test-Modal {    
+    @media screen and (min-width: 1400px) {
+        width: 1100px !important;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1400px) {
+        width: 950px !important;
+    }
+
+
+    .new-test-box {
+        -webkit-box-shadow: 0px 0px 10px 2px rgb(163 163 163);
+        -moz-box-shadow: 0px 0px 10px 2px rgb(163 163 163);
+        box-shadow: 0px 0px 10px 2px rgb(163 163 163);
+        margin: $margin;
+        padding: $margin*2;
+        border-radius: $border-radius;
+        user-select: none;
+    
+        &-title {
+            display: flex;
+            align-items: center;
+            
+            .title {
+                font-size: 16px;
+                font-weight: 500;
+            }
+            div {
+                margin-left: $margin;
+            }
+        }
+
+        .description {
+            margin-top: $margin;
+        }
+    
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 0px 10px 5px rgb(163 163 163);
+        }
+    }
+
+    .ant-modal-content {
+        border-radius: $border-radius;
+    }
+}
+
+.api-test-page-header {
+    padding-bottom: 0px;
+}
+
+.icon-aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    color:$primary-color-1;
+    background-color: $primary-color-5;
+    border-radius: $border-radius;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-color-4;
+    }
+
+    &.transparent {
+        background-color: transparent;
+    }
+}
+
+.page-container {
+    background: #fafafa;
+}

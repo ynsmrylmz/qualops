@@ -1,1 +1,22 @@
 $primary-color-1: #514698;
+$primary-color-2 : lighten($primary-color-1,20);
+$primary-color-3 : lighten($primary-color-1,30);
+$primary-color-4 : lighten($primary-color-1,40);
+$primary-color-5 : lighten($primary-color-1,50);
+$primary-color-6 : lighten($primary-color-1,52);
+
+$secondary-color-1: #000;
+$secondary-color-2 : lighten($secondary-color-1,20);
+$secondary-color-3 : lighten($secondary-color-1,30);
+$secondary-color-4 : lighten($secondary-color-1,40);
+$secondary-color-5 : lighten($secondary-color-1,50);
+$secondary-color-6 : lighten($secondary-color-1,60);
+$secondary-color-7 : lighten($secondary-color-1,70);
+$secondary-color-8 : lighten($secondary-color-1,80);
+$secondary-color-9 : lighten($secondary-color-1,90);
+$secondary-color-10 : lighten($secondary-color-1,100);
+
+$border-radius:4px;
+$margin : 10px;
+$padding : 4px;
+$box-shadow: 0px 0px 2px 2px $primary-color-3;
